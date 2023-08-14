@@ -1,22 +1,19 @@
 package com.stringAssignment;
+//Write a Java program to compare two strings.
 
-import java.util.Scanner;
-
-//Write a Java program to convert lowercase string to uppercase
 public class Example6 {
-public static void stringLowertoUpper(String s)
-{
-	s=s.toUpperCase();
-	int len=s.length();
-	for(int i=0;i<len;i++)
-	{
-		System.out.print(s.charAt(i));
-	}
-}
 public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	System.out.println();
-	String a=sc.next();
-	stringLowertoUpper(a);
+	String s1="a";
+	String s2="A";
+	int s=s1.compareTo(s2);
+	System.out.println("a= "+s);
+	if(s==0)
+	{
+		System.out.println("Both Strings are equal");
+	}
+	else
+	{
+		System.out.println("Both String are not equal");
+	}
 }
 }
